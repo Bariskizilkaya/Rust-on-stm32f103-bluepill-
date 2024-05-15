@@ -29,6 +29,20 @@ panic-halt = "0.2.0"
 version = "0.10.0"
 features = ["rt", "stm32f103", "medium"]
 ```
+Cargo.toml
+```
+[dependencies]
+embedded-hal = "0.2.7"
+nb = "1"
+cortex-m = "0.7.6"
+cortex-m-rt = "0.7.1"
+# Panic behaviour, see https://crates.io/keywords/panic-impl for alternatives
+panic-halt = "0.2.0"
+
+[dependencies.stm32f1xx-hal]
+version = "0.10.0"
+features = ["rt", "stm32f103", "medium"]
+```
 
 .cargo/config
 ```
@@ -51,13 +65,13 @@ MEMORY
 }
 ```
 
-
-
-
+and then
 
 ```
 cargo build
 ```
+ 
+ I got error at here i couldnt figure it out 
 
 ```
 cargo flash --chip stm32f103C8 --release

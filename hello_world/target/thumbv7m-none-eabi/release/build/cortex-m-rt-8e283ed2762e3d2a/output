@@ -1,0 +1,6 @@
+cargo:rustc-link-lib=static=cortex-m-rt
+cargo:rustc-cfg=cortex_m
+cargo:rustc-cfg=armv7m
+cargo:rustc-link-search=/home/pinhan/Documents/rust/stm32f103/hello_world/target/thumbv7m-none-eabi/release/build/cortex-m-rt-8e283ed2762e3d2a/out
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-changed=link.x.in

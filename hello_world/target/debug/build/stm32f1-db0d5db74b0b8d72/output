@@ -1,0 +1,3 @@
+cargo:rustc-link-search=/home/pinhan/Documents/rust/stm32f103/hello_world/target/debug/build/stm32f1-db0d5db74b0b8d72/out
+cargo:rerun-if-changed=src/stm32f103/device.x
+cargo:rerun-if-changed=build.rs

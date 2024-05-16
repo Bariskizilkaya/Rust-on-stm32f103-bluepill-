@@ -76,3 +76,5 @@ cargo build
 ```
 cargo flash --chip stm32f103C8 --release
 ```
+
+https://altiumlibrary.com/GetStarted/Troubleshooting

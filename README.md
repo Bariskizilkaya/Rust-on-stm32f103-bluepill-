@@ -75,6 +75,7 @@ cargo build
 It should successfully compile 
 
 https://github.com/Bariskizilkaya/Rust-on-stm32f103-bluepill-/blob/main/1.jpeg
+https://github.com/Bariskizilkaya/Rust-on-stm32f103-bluepill-/blob/main/2.jpeg
 
 ```
 cargo flash --chip stm32f103C8 --release

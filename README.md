@@ -42,6 +42,7 @@ panic-halt = "0.2.0"
 [dependencies.stm32f1xx-hal]
 version = "0.10.0"
 features = ["rt", "stm32f103", "medium"]
+
 ```
 
 .cargo/config
@@ -63,6 +64,7 @@ MEMORY
   FLASH : ORIGIN = 0x08000000, LENGTH = 64K
   RAM : ORIGIN = 0x20000000, LENGTH = 20K
 }
+
 ```
 
 and then
@@ -70,8 +72,7 @@ and then
 ```
 cargo build
 ```
- 
- I got error at here i couldnt figure it out 
+It should successfully compile 
 
 ```
 cargo flash --chip stm32f103C8 --release
